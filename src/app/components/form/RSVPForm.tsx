@@ -1,6 +1,7 @@
 'use client'
 
 import {useState} from 'react'
+import artDecoFrame from './art-deco-frame.png'
 
 export default function RSVPForm() {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ export default function RSVPForm() {
         name: '',
         email: '',
         guests: '1',
-        attending: 'yes',
+        attending: '',
         dietaryRestrictions: '',
         message: ''
       })
@@ -58,16 +59,16 @@ export default function RSVPForm() {
 
   if (status === 'success') {
     return (
-      <div className="max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-lg">
+      <div className="max-w-2xl mx-auto p-8 bg-[#b01616] rounded-lg shadow-lg">
         <div className="text-center">
           <div className="text-6xl mb-4">💐</div>
-          <h2 className="text-3xl font-serif text-gray-800 mb-4">Thank You!</h2>
-          <p className="text-gray-600 mb-6">
+          <h2 className="text-3xl font-serif text-[#eeeadc] mb-4">Thank You!</h2>
+          <p className="text-[#eeeadc] mb-6">
             Your RSVP has been received. We can't wait to celebrate with you!
           </p>
           <button
             onClick={() => setStatus('idle')}
-            className="text-rose-600 hover:text-rose-700 underline"
+            className="text-[#eeeadc] hover:no-underline underline cursor-pointer"
           >
             Submit another RSVP
           </button>
@@ -77,12 +78,12 @@ export default function RSVPForm() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-lg">
-      <h2 className="text-4xl font-serif text-center text-gray-800 mb-8">RSVP</h2>
+    <div className="max-w-2xl mx-auto p-8 bg-[#b01616] rounded-lg shadow-lg">
+      <h2 className="text-4xl font-serif text-center text-[#eeeadc] mb-8">RSVP</h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="name" className="block text-sm font-medium text-[#eeeadc] mb-2">
             Full Name *
           </label>
           <input
@@ -92,13 +93,16 @@ export default function RSVPForm() {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+            className={
+              'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] placeholder-black ' +
+              'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
+            }
             placeholder="John Doe"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="email" className="block text-sm font-medium text-[#eeeadc] mb-2">
             Email Address *
           </label>
           <input
@@ -108,13 +112,16 @@ export default function RSVPForm() {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+            className={
+              'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] placeholder-black ' +
+              'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
+            }
             placeholder="john@example.com"
           />
         </div>
 
         <div>
-          <label htmlFor="attending" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="attending" className="block text-sm font-medium text-[#eeeadc] mb-2">
             Will you be attending? *
           </label>
           <select
@@ -123,7 +130,10 @@ export default function RSVPForm() {
             required
             value={formData.attending}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+            className={
+              'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] text-black ' +
+              'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
+            }
           >
             <option value="yes">Joyfully accepts</option>
             <option value="no">Regretfully declines</option>
@@ -132,8 +142,8 @@ export default function RSVPForm() {
 
         {formData.attending === 'yes' && (
           <>
-            <div>
-              <label htmlFor="guests" className="block text-sm font-medium text-gray-700 mb-2">
+          <div>
+              <label htmlFor="guests" className="block text-sm font-medium text-[#eeeadc] mb-2">
                 Number of Guests *
               </label>
               <select
@@ -142,8 +152,10 @@ export default function RSVPForm() {
                 required
                 value={formData.guests}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-rose-500 focus:border-transparent"
-              >
+                className={
+                  'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] text-black ' +
+                  'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
+                }              >
                 {[1, 2, 3, 4, 5, 6].map(num => (
                   <option key={num} value={num}>{num}</option>
                 ))}
@@ -151,7 +163,7 @@ export default function RSVPForm() {
             </div>
 
             <div>
-              <label htmlFor="dietaryRestrictions" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="dietaryRestrictions" className="block text-sm font-medium text-[#eeeadc] mb-2">
                 Dietary Restrictions or Allergies
               </label>
               <input
@@ -160,7 +172,10 @@ export default function RSVPForm() {
                 name="dietaryRestrictions"
                 value={formData.dietaryRestrictions}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+                className={
+                  'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] placeholder-black ' +
+                  'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
+                }
                 placeholder="e.g., Vegetarian, Gluten-free, None"
               />
             </div>
@@ -168,7 +183,7 @@ export default function RSVPForm() {
         )}
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="message" className="block text-sm font-medium text-[#eeeadc] mb-2">
             Message to the Couple
           </label>
           <textarea
@@ -177,7 +192,10 @@ export default function RSVPForm() {
             rows={4}
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+            className={
+              'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] placeholder-black ' +
+              'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
+            }
             placeholder="Share your well wishes..."
           />
         </div>
@@ -191,7 +209,11 @@ export default function RSVPForm() {
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="w-full bg-rose-600 text-white py-3 px-6 rounded-md font-medium hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className={
+            'w-full bg-[#1f1f1f] text-white py-3 px-6 rounded-md font-medium ' +
+            'hover:bg-[#1f1f1fcc] focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 ' +
+            'cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed transition-colors'
+          }
         >
           {status === 'loading' ? 'Submitting...' : 'Submit RSVP'}
         </button>
