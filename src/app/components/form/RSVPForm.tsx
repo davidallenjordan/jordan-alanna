@@ -2,6 +2,8 @@
 
 import {useState} from 'react'
 import artDecoFrame from './art-deco-frame.png'
+import artDecoFrame2 from './art-deco-frame-2.png'
+import Image from 'next/image'
 
 export default function RSVPForm() {
   const [formData, setFormData] = useState({
@@ -78,7 +80,14 @@ export default function RSVPForm() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto p-8 bg-[#b01616] rounded-lg shadow-lg">
+    <div className="relative max-w-3xl mx-auto px-[76px] pt-[70px] pb-[86px] bg-[#b01616] rounded-lg shadow-lg z-1">
+
+      <Image
+        className="absolute inset-0 size-full -z-1 opacity-75"
+        src={artDecoFrame2}
+        alt=""
+      />
+
       <h2 className="text-4xl font-serif text-center text-[#eeeadc] mb-8">RSVP</h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
