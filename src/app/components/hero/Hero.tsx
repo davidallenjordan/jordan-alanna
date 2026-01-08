@@ -8,14 +8,14 @@ export default function Hero() {
         <h1 className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-6 text-5xl sm:text-7xl md:text-8xl font-didot">
           <div className="flex flex-col items-end leading-none">
             <span>Jordan</span>
-            <span className="font-snell text-2xl sm:text-3xl md:text-4xl font-bold mt-0">May</span>
+            <span className="font-snell text-2xl sm:text-3xl md:text-4xl font-black mt-0">May</span>
           </div>
 
-          <span className="font-snell text-2xl sm:text-3xl md:text-4xl font-bold self-center">&</span>
+          <span className="font-snell text-2xl sm:text-3xl md:text-4xl font-black self-center">&</span>
 
           <div className="flex flex-col items-end leading-none">
             <span>Alanna</span>
-            <span className="font-snell text-2xl sm:text-3xl md:text-4xl font-bold mt-0">Dunlop</span>
+            <span className="font-snell font-black text-2xl sm:text-3xl md:text-4xl mt-0">Dunlop</span>
           </div>
         </h1>
 
