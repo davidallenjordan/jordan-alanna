@@ -50,8 +50,18 @@ export default function RootLayout({
       ${allura.variable} 
       ${publicSans.variable}
       ${ebGaramond.variable}
-      `}>
-    <body>{children}</body>
+      `}
+    >
+      <body>
+        <link
+          rel="preload"
+          href="https://online-fonts.com/fonts/snell-roundhand.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        {children}
+      </body>
     </html>
   )
 }
