@@ -35,14 +35,14 @@
 /* Tailwind Theme Configuration */
 @theme {
     /* Fonts */
-    --font-family-cormorant: var(--font-cormorant);
-    --font-family-great-vibes: var(--font-great-vibes);
-    --font-family-allura: var(--font-allura);
-    --font-family-public-sans: var(--font-public-sans);
-    --font-family-garamond: "EB Garamond", serif;
+    /*--font-family-cormorant: var(--font-cormorant);*/
+    /*--font-family-great-vibes: var(--font-great-vibes);*/
+    /*--font-family-allura: var(--font-allura);*/
+    /*--font-family-public-sans: var(--font-public-sans);*/
+    /*--font-family-garamond: "EB Garamond", serif;*/
     --font-family-didot: "GFS Didot", serif;
     --font-family-snell: "Snell Roundhand", cursive;
-    --font-family-dorothea: "Dorothea W01 Regular", serif;
+    /*--font-family-dorothea: "Dorothea W01 Regular", serif;*/
 
     /* Colors */
     --color-pearl: var(--backgroundLight);
