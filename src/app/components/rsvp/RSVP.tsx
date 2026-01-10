@@ -1,11 +1,8 @@
 'use client'
 
 import {useState} from 'react'
-import artDecoFrame from './art-deco-frame.png'
-import artDecoFrame2 from './art-deco-frame-2.png'
-import Image from 'next/image'
 
-export default function RSVPForm() {
+export default function RSVP() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -42,7 +39,7 @@ export default function RSVPForm() {
         name: '',
         email: '',
         guests: '1',
-        attending: '',
+        attending: 'yes',
         dietaryRestrictions: '',
         message: ''
       })
@@ -61,16 +58,16 @@ export default function RSVPForm() {
 
   if (status === 'success') {
     return (
-      <div className="max-w-2xl mx-auto p-8 bg-[#b01616] rounded-lg shadow-lg">
+      <div className="max-w-2xl mx-auto py-[60px]">
         <div className="text-center">
           <div className="text-6xl mb-4">💐</div>
-          <h2 className="text-3xl font-serif text-[#eeeadc] mb-4">Thank You!</h2>
-          <p className="text-[#eeeadc] mb-6">
-            Your RSVP has been received. We can't wait to celebrate with you!
+          <h2 className="text-3xl font-serif text-pearl mb-4">Thank You!</h2>
+          <p className="text-pearl mb-6">
+            Your RSVP has been received. We canʼt wait to celebrate with you!
           </p>
           <button
             onClick={() => setStatus('idle')}
-            className="text-[#eeeadc] hover:no-underline underline cursor-pointer"
+            className="text-pearl hover:no-underline underline cursor-pointer"
           >
             Submit another RSVP
           </button>
@@ -80,19 +77,13 @@ export default function RSVPForm() {
   }
 
   return (
-    <div className="relative max-w-3xl mx-auto px-[76px] pt-[70px] pb-[86px] bg-[#b01616] rounded-lg shadow-lg z-1">
+    <div id="rsvp" className="max-w-3xl mx-auto px-[76px] py-[60px]">
 
-      <Image
-        className="absolute inset-0 size-full -z-1 opacity-75"
-        src={artDecoFrame2}
-        alt=""
-      />
-
-      <h2 className="text-4xl font-serif text-center text-[#eeeadc] mb-8">RSVP</h2>
+      <h2 className="heading-2 text-pearl text-center">RSVP</h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-[#eeeadc] mb-2">
+          <label htmlFor="name" className="block text-sm font-medium text-pearl mb-2">
             Full Name *
           </label>
           <input
@@ -103,7 +94,7 @@ export default function RSVPForm() {
             value={formData.name}
             onChange={handleChange}
             className={
-              'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] placeholder-black ' +
+              'w-full px-4 py-2 border border-gray-300 rounded-md bg-pearl placeholder-dark ' +
               'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
             }
             placeholder="John Doe"
@@ -111,7 +102,7 @@ export default function RSVPForm() {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-[#eeeadc] mb-2">
+          <label htmlFor="email" className="block text-sm font-medium text-pearl mb-2">
             Email Address *
           </label>
           <input
@@ -122,7 +113,7 @@ export default function RSVPForm() {
             value={formData.email}
             onChange={handleChange}
             className={
-              'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] placeholder-black ' +
+              'w-full px-4 py-2 border border-gray-300 rounded-md bg-pearl placeholder-dark ' +
               'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
             }
             placeholder="john@example.com"
@@ -130,7 +121,7 @@ export default function RSVPForm() {
         </div>
 
         <div>
-          <label htmlFor="attending" className="block text-sm font-medium text-[#eeeadc] mb-2">
+          <label htmlFor="attending" className="block text-sm font-medium text-pearl mb-2">
             Will you be attending? *
           </label>
           <select
@@ -140,7 +131,7 @@ export default function RSVPForm() {
             value={formData.attending}
             onChange={handleChange}
             className={
-              'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] text-black ' +
+              'w-full px-4 py-2 border border-gray-300 rounded-md bg-pearl text-dark ' +
               'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
             }
           >
@@ -152,7 +143,7 @@ export default function RSVPForm() {
         {formData.attending === 'yes' && (
           <>
           <div>
-              <label htmlFor="guests" className="block text-sm font-medium text-[#eeeadc] mb-2">
+              <label htmlFor="guests" className="block text-sm font-medium text-pearl mb-2">
                 Number of Guests *
               </label>
               <select
@@ -162,7 +153,7 @@ export default function RSVPForm() {
                 value={formData.guests}
                 onChange={handleChange}
                 className={
-                  'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] text-black ' +
+                  'w-full px-4 py-2 border border-gray-300 rounded-md bg-pearl text-dark ' +
                   'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
                 }              >
                 {[1, 2, 3, 4, 5, 6].map(num => (
@@ -172,7 +163,7 @@ export default function RSVPForm() {
             </div>
 
             <div>
-              <label htmlFor="dietaryRestrictions" className="block text-sm font-medium text-[#eeeadc] mb-2">
+              <label htmlFor="dietaryRestrictions" className="block text-sm font-medium text-pearl mb-2">
                 Dietary Restrictions or Allergies
               </label>
               <input
@@ -182,7 +173,7 @@ export default function RSVPForm() {
                 value={formData.dietaryRestrictions}
                 onChange={handleChange}
                 className={
-                  'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] placeholder-black ' +
+                  'w-full px-4 py-2 border border-gray-300 rounded-md bg-pearl placeholder-dark ' +
                   'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
                 }
                 placeholder="e.g., Vegetarian, Gluten-free, None"
@@ -192,7 +183,7 @@ export default function RSVPForm() {
         )}
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-[#eeeadc] mb-2">
+          <label htmlFor="message" className="block text-sm font-medium text-pearl mb-2">
             Message to the Couple
           </label>
           <textarea
@@ -202,7 +193,7 @@ export default function RSVPForm() {
             value={formData.message}
             onChange={handleChange}
             className={
-              'w-full px-4 py-2 border border-gray-300 rounded-md bg-[#eeeadc] placeholder-black ' +
+              'w-full px-4 py-2 border border-gray-300 rounded-md bg-pearl placeholder-dark ' +
               'focus:ring-2 focus:ring-rose-500 focus:border-transparent'
             }
             placeholder="Share your well wishes..."
@@ -219,7 +210,7 @@ export default function RSVPForm() {
           type="submit"
           disabled={status === 'loading'}
           className={
-            'w-full bg-[#1f1f1f] text-white py-3 px-6 rounded-md font-medium ' +
+            'w-full bg-dark text-pearl py-3 px-6 rounded-md font-medium ' +
             'hover:bg-[#1f1f1fcc] focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 ' +
             'cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed transition-colors'
           }

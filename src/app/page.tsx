@@ -1,8 +1,9 @@
 import Hero from './components/hero/Hero'
-import Nav from '@/app/components/nav/Nav'
 import Details from '@/app/components/details/Details'
 import FAQ from '@/app/components/faq/FAQ'
 import OrderOfEvents from '@/app/components/order-of-events/OrderOfEvents'
+import Nav from '@/app/components/nav/Nav'
+import RSVP from '@/app/components/rsvp/RSVP'
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Details />
       <OrderOfEvents />
       <FAQ />
-      {/*<FormContainer />*/}
+      <RSVP />
     </main>
   )
 }
