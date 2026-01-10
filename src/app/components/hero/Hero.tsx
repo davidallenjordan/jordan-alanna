@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="flex justify-center items-center bg-accent my-4 md:my-10 px-4">
       <div className="text-pearl flex flex-col items-center justify-center space-y-6 md:space-y-10 max-w-full">
-        <h1 className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-6 text-5xl sm:text-7xl md:text-8xl font-didot">
+        <h1 className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-6 heading-1">
           <div className="flex flex-col items-end leading-none">
             <span>Jordan</span>
             <span className="font-snell text-2xl sm:text-3xl md:text-4xl font-black mt-0">May</span>
