@@ -5,7 +5,7 @@ export default function Details() {
       id="details"
     >
       <div className="container py-[60px]">
-        <h2 className="heading-2 text-dark pb-[32px] sm:pb-[40px]">Details</h2>
+        <h2 className="heading-2 text-dark pb-[16px] sm:pb-[32px]">Details</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-[40px]">
           {/* Location */}
