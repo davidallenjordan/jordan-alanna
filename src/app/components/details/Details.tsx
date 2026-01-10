@@ -4,7 +4,7 @@ export default function Details() {
       className="bg-pearl"
       id="details"
     >
-      <div className="container pt-[60px]">
+      <div className="container py-[60px]">
         <h2 className="heading-2 text-dark pb-[16px] sm:pb-[32px]">Details</h2>
 
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-[40px]">

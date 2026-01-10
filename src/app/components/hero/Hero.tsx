@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <div className="flex justify-center items-center bg-accent my-4 md:my-10 px-4">
+    <div className="flex justify-center items-center bg-accent py-[60px] container">
       <div className="text-pearl flex flex-col items-center justify-center space-y-6 md:space-y-10 max-w-full">
         <h1 className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-6 heading-1">
           <div className="flex flex-col items-end leading-none">
