@@ -4,12 +4,12 @@ export default function Details() {
       className="bg-pearl"
       id="details"
     >
-      <div className="container py-[60px]">
+      <div className="container pt-[60px]">
         <h2 className="heading-2 text-dark pb-[16px] sm:pb-[32px]">Details</h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-[40px]">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-[40px]">
           {/* Location */}
-          <div>
+          <li>
             <h3 className="heading-3 text-dark mb-3">Location</h3>
             <p className="text-dark mb-4">
               The Great Hall is located at 1087 Queen Street W. and is situated on the south east corner of Queen and
@@ -25,10 +25,10 @@ export default function Details() {
               <strong>Public Transit:</strong> If you are making your way via TTC, the 501 streetcar stops at Queen
               Street W. and Dovercourt Rd.
             </p>
-          </div>
+          </li>
 
           {/* Accommodations */}
-          <div>
+          <li>
             <h3 className="heading-3 text-dark mb-3">Accommodations</h3>
             <p className="text-dark mb-4">
               If you are coming in from out of town, we recommend the following hotels in the area, which are within
@@ -64,26 +64,26 @@ export default function Details() {
                 gladstonehouse.ca
               </a>
             </div>
-          </div>
+          </li>
 
           {/* Gifts */}
-          <div>
+          <li>
             <h3 className="heading-3 text-dark mb-3">Gifts</h3>
             <p className="text-dark">
               We are extremely grateful to celebrate this wonderful day with our loved ones. If you feel inclined to
               provide a gift, a contribution towards our honeymoon/next life adventure would be greatly appreciated. A
               busta/card box will be at our reception!
             </p>
-          </div>
+          </li>
 
           {/* Dress Code */}
-          <div>
+          <li>
             <h3 className="heading-3 text-dark mb-3">Dress Code</h3>
             <p className="text-dark">
               Formal attire / whatever makes you feel fabulous :)
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
   )
