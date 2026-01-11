@@ -164,7 +164,22 @@
     }
 }
 
+/* Scroll offset for fixed nav */
+section[id] {
+    scroll-margin-top: 165px; /* Mobile nav height */
+}
+
+@media (min-width: 640px) {
+    section[id] {
+        scroll-margin-top: 58px; /* Desktop nav height */
+    }
+}
+
 /* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--backgroundAccent);
     color: var(--color-dark);

@@ -77,7 +77,7 @@ export default function RSVP() {
   }
 
   return (
-    <div id="rsvp" className="container md:max-w-2xl mx-auto py-[60px]">
+    <section id="rsvp" className="container md:max-w-2xl mx-auto py-[60px]">
       <h2 className="heading-2 text-pearl text-center pb-[16px] sm:pb-[32px]">RSVP</h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -217,6 +217,6 @@ export default function RSVP() {
           {status === 'loading' ? 'Submitting...' : 'Submit RSVP'}
         </button>
       </form>
-    </div>
+    </section>
   )
 }

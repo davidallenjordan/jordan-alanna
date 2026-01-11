@@ -8,7 +8,7 @@ import PasswordGate from '@/app/components/password-gate/PasswordGate'
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-[165px] sm:pt-[60px]">
       <PasswordGate>
         <Nav />
         <Hero />
