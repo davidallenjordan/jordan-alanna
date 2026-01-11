@@ -58,16 +58,16 @@ export default function RSVP() {
 
   if (status === 'success') {
     return (
-      <div className="max-w-2xl mx-auto py-[60px]">
+      <div className="container max-w-2xl mx-auto py-[60px]">
         <div className="text-center">
           <div className="text-6xl mb-4">💐</div>
-          <h2 className="text-3xl font-serif text-pearl mb-4">Thank You!</h2>
-          <p className="text-pearl mb-6">
+          <h2 className="heading-2 text-pearl mb-4">Thank You!</h2>
+          <p className="heading-3 text-pearl  mb-6">
             Your RSVP has been received. We canʼt wait to celebrate with you!
           </p>
           <button
             onClick={() => setStatus('idle')}
-            className="text-pearl hover:no-underline underline cursor-pointer"
+            className="font-didot text-pearl hover:no-underline underline cursor-pointer"
           >
             Submit another RSVP
           </button>
@@ -77,9 +77,8 @@ export default function RSVP() {
   }
 
   return (
-    <div id="rsvp" className="max-w-3xl mx-auto px-[76px] py-[60px]">
-
-      <h2 className="heading-2 text-pearl text-center">RSVP</h2>
+    <div id="rsvp" className="container md:max-w-2xl mx-auto py-[60px]">
+      <h2 className="heading-2 text-pearl text-center pb-[16px] sm:pb-[32px]">RSVP</h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
@@ -142,7 +141,7 @@ export default function RSVP() {
 
         {formData.attending === 'yes' && (
           <>
-          <div>
+            <div>
               <label htmlFor="guests" className="block text-sm font-medium text-pearl mb-2">
                 Number of Guests *
               </label>
