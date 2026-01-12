@@ -1,21 +1,21 @@
-import heroImage from '../../assets/jordan-alanna-wedding-hero.jpeg'
+import heroImage from '../../assets/jordan-alanna-wedding-hero.png'
 import Image from 'next/image'
 
 export default function Hero() {
   return (
     <div className="flex justify-center items-center bg-accent pt-[60px] container">
       <div className="text-pearl flex flex-col items-center justify-center space-y-6 md:space-y-10 max-w-full">
-        <h1 className="flex flex-row items-center justify-center gap-3 sm:gap-6 heading-1">
+        <h1 className="flex flex-row items-center justify-center gap-3 sm:gap-6 heading-1 uppercase">
           <div className="flex flex-col items-end leading-none">
             <span>Jordan</span>
-            <span className="font-snell text-[20px] sm:text-3xl md:text-4xl font-black mt-0">May</span>
+            <span className="font-snell text-[20px] sm:text-3xl md:text-4xl font-black mt-0 normal-case">May</span>
           </div>
 
           <span className="font-snell text-[20px] sm:text-3xl md:text-4xl font-black self-center">&</span>
 
           <div className="flex flex-col items-end leading-none">
             <span>Alanna</span>
-            <span className="font-snell font-black text-[20px] sm:text-3xl md:text-4xl mt-0">Dunlop</span>
+            <span className="font-snell font-black text-[20px] sm:text-3xl md:text-4xl mt-0 normal-case">Dunlop</span>
           </div>
         </h1>
 

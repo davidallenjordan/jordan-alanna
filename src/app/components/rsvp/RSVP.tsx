@@ -219,8 +219,7 @@ export default function RSVP() {
                     <option value="">-- Please choose --</option>
                     <option value="beef">Beef</option>
                     <option value="chicken">Chicken</option>
-                    <option value="fish">Fish</option>
-                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegan</option>
                   </select>
                 </div>
 
@@ -275,7 +274,7 @@ export default function RSVP() {
 
       <p className="text-pearl text-center text-sm my-8">
         Having trouble? <a
-        href="mailto:your-email.com?subject=RSVP%20Help&body=Please%20include:%0A%0AYour%20name:%0AAttending:%20Yes%20/%20No%0AFood%20preference:%20Beef%20/%20Chicken%20/%20Fish%20/%20Vegan%0AAny%20dietary%20restrictions:"
+        href="mailto:alanna.dunlop@gmail.com?subject=RSVP%20Help&body=Please%20include:%0A%0AYour%20name:%0AAttending:%20Yes%20/%20No%0AFood%20preference:%20Beef%20/%20Chicken%20/%20Vegetarian%0AAny%20dietary%20restrictions:"
         className="underline hover:no-underline"
       >
         Email us your RSVP
