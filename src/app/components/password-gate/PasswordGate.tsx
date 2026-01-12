@@ -58,7 +58,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
     <div className="min-h-screen bg-accent flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-pearl rounded-lg shadow-lg p-8">
         <h1 className="heading-2 text-dark text-center mb-6">
-          Jordan & Alanna
+          Jordan <br/> & <br/> Alanna
         </h1>
         <p className="text-dark text-center mb-8">
           Please enter the password to view our wedding details
