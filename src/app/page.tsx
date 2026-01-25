@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <PasswordGate>
-        <div className="pt-[165px] sm:pt-[60px]">
+        <div className="pt-[58px] sm:pt-[60px]">
           <Nav />
           <Hero />
           <OrderOfEvents />

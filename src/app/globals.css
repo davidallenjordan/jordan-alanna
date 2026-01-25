@@ -171,19 +171,20 @@
 }
 
 /* Scroll offset for fixed nav */
-section[id] {
-    scroll-margin-top: 165px; /* Mobile nav height */
-}
+/*section[id] {*/
+/*    scroll-margin-top: 165px; !* Mobile nav height *!*/
+/*}*/
 
-@media (min-width: 640px) {
-    section[id] {
-        scroll-margin-top: 58px; /* Desktop nav height */
-    }
-}
+/*@media (min-width: 640px) {*/
+/*    section[id] {*/
+/*        scroll-margin-top: 60px; !* Desktop nav height *!*/
+/*    }*/
+/*}*/
 
 /* Global Styles */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 56px;
 }
 
 body {
