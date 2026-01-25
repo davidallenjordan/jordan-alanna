@@ -118,14 +118,13 @@
     }
 }
 
-
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .heading-1 {
         font-size: 4.5rem; /* 72px */
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .heading-1 {
         font-size: 6rem; /* 96px */
     }

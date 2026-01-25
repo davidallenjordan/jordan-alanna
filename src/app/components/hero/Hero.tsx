@@ -8,26 +8,26 @@ export default function Hero() {
         <h1 className="flex flex-row items-center justify-center gap-3 sm:gap-6 heading-1 uppercase">
           <div className="flex flex-col items-end leading-none">
             <span>Jordan</span>
-            <span className="font-snell text-[20px] sm:text-3xl md:text-[80px] font-black md:-mt-3 normal-case">May</span>
+            <span className="font-snell font-black sm:-mt-1 md:-mt-3 normal-case text-[30px] sm:text-[45px] md:text-[60px] lg:text-[80px]">May</span>
           </div>
 
-          <span className="font-snell text-[20px] sm:text-3xl md:text-[80px] font-black self-center">&</span>
+          <span className="font-snell font-black self-center text-[30px] sm:text-[45px] md:text-[60px] lg:text-[80px]">&</span>
 
           <div className="flex flex-col items-end leading-none">
             <span>Alanna</span>
-            <span className="font-snell font-black text-[20px] sm:text-3xl md:text-[80px] md:-mt-3 normal-case">Dunlop</span>
+            <span className="font-snell font-black sm:-mt-1 md:-mt-3 normal-case text-[30px] sm:text-[45px] md:text-[60px] lg:text-[80px]">Dunlop</span>
           </div>
         </h1>
 
-        <div className="relative w-full max-w-[650px] pb-[120px]">
+        <div className="relative w-full max-w-[650px] pb-[100px] sm:pb-[120px] md:pb-[140px]">
           <Image
             className="w-full h-auto"
             src={heroImage}
             alt="A series of photobooth portraits of the wedding couple"
           />
 
-          <span className="font-snell text-[2rem] xs:text-[3.5rem] sm:text-[4.5rem] md:text-[5rem] absolute bottom-16 right-0 left-0 text-center rotate-[-8deg]">
-            are getting married
+          <span className="font-snell text-[30px] sm:text-[45px] md:text-[60px] lg:text-[75px] absolute bottom-16 right-0 left-0 text-center rotate-[-8deg]">
+            are getting married!
           </span>
         </div>
 
