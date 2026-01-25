@@ -13,12 +13,12 @@ export default function Home() {
         <div className="pt-[165px] sm:pt-[60px]">
           <Nav />
           <Hero />
-          <Details />
           <OrderOfEvents />
+          <Details />
           <FAQ />
           <RSVP />
           <div className="bg-accent py-[8px]">
-            <p className="container text-didot text-sm text-pearl text-right">This website was built by David Allen-Jordan</p>
+            <p className="text-didot text-sm text-pearl text-right pr-[20px]">This website was built by David Allen-Jordan</p>
           </div>
         </div>
       </PasswordGate>
