@@ -36,7 +36,7 @@ export default function FAQ() {
       id="faq"
     >
       <div className="container py-[60px] text-accent">
-        <h2 className="heading-2 pb-[16px] sm:pb-[32px] font-didot font-normal">FAQs</h2>
+        <h2 className="heading-2 pb-[16px] sm:pb-[32px] text-center">Frequently Asked Questions</h2>
 
         <div className="space-y-8 max-w-3xl">
           {faqs.map((faq, index) => (
