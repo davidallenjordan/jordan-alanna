@@ -16,7 +16,7 @@ export default function Details() {
               Room and Main Hall.
             </p>
 
-            <h4 className="font-didot text-lg font-bold mb-1">Parking</h4>
+            <h4 className="heading-4 mb-1">Parking</h4>
             <p className="mb-4">
               Green P parking is located a short distance from the Great Hall at 45 Abell St.
               and is accessible from both Abell St. and Lisgar Ave. Additionally, street parking is available throughout
@@ -39,7 +39,7 @@ export default function Details() {
             </p>
 
             <div className="mb-4">
-              <h4 className="font-didot  text-lg font-bold mb-1">The Drake Hotel</h4>
+              <h4 className="heading-4 mb-1">The Drake Hotel</h4>
               <p className="mb-2">
                 <span className="block">1150 Queen St W. </span>
                 <span className="block">Toronto, ON M6J 1J3</span>
@@ -59,7 +59,7 @@ export default function Details() {
             </div>
 
             <div>
-              <h4 className="font-didot text-lg font-bold mb-1">The Gladstone House</h4>
+              <h4 className="heading-4 mb-1">The Gladstone House</h4>
               <p className="mb-2">
                 <span className="block">1214 Queen St W.</span>
                 <span className="block">Toronto, ON M6J 1J6</span>
