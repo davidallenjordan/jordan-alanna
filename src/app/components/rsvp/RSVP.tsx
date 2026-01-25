@@ -116,7 +116,7 @@ export default function RSVP() {
   return (
     <section id="rsvp" className="container md:max-w-2xl mx-auto py-[60px]">
       <h2 className="heading-2 text-pearl text-center pb-[16px] sm:pb-[32px] font-didot font-normal">RSVP</h2>
-      <p className="text-pearl text-didot pb-[16px] sm:pb-[32px]">Please note: if you’re responding for more than one guest, please submit an RSVP for each individual by listing their name, selecting their meal choice, and confirming whether they’ll be celebrating with us.</p>
+      <p className="text-pearl text-didot pb-[16px] sm:pb-[32px] text-lg">Please note: if you’re responding for more than one guest, please submit an RSVP for each individual by listing their name, selecting their meal choice, and confirming whether they’ll be celebrating with us.</p>
 
       {!isVerified ? (
         // Step 1: Name verification
