@@ -115,7 +115,7 @@ export default function RSVP() {
 
   return (
     <section id="rsvp" className="container md:max-w-2xl mx-auto py-[60px]">
-      <h2 className="heading-2 text-pearl text-center pb-[16px] sm:pb-[32px]">RSVP</h2>
+      <h2 className="heading-2 text-pearl text-center pb-[16px] sm:pb-[32px] font-didot font-normal">RSVP</h2>
 
       {!isVerified ? (
         // Step 1: Name verification
@@ -131,7 +131,7 @@ export default function RSVP() {
               onChange={(e) => setGuestName(e.target.value)}
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-md bg-pearl placeholder-dark focus:ring-2 focus:ring-rose-500 focus:border-transparent"
-              placeholder="John Doe"
+              placeholder="Your full name"
             />
           </div>
 

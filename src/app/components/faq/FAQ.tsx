@@ -35,23 +35,23 @@ export default function FAQ() {
       className="bg-pearl"
       id="faq"
     >
-      <div className="container py-[60px]">
-        <h2 className="heading-2 text-dark pb-[16px] sm:pb-[32px]">FAQs</h2>
+      <div className="container py-[60px] text-accent">
+        <h2 className="heading-2 pb-[16px] sm:pb-[32px] font-didot font-normal">FAQs</h2>
 
         <div className="space-y-8 max-w-3xl">
           {faqs.map((faq, index) => (
             <div key={index}>
-              <h3 className="heading-3 text-dark mb-3">
+              <h3 className="heading-3 mb-3">
                 {faq.question}
               </h3>
-              <p className="text-dark">
+              <p className="">
                 {faq.answer}
               </p>
             </div>
           ))}
         </div>
 
-        <p className="text-dark text-center mt-12 italic font-bold">
+        <p className="text-center mt-12 italic font-bold">
           Please reach out to Alanna or Jordan directly if you have any specific questions!
         </p>
       </div>
