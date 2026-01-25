@@ -219,7 +219,7 @@ export default function RSVP() {
                     <option value="">-- Please choose --</option>
                     <option value="beef">Beef</option>
                     <option value="chicken">Chicken</option>
-                    <option value="vegetarian">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
                   </select>
                 </div>
 
