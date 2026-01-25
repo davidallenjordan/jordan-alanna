@@ -164,6 +164,12 @@
     }
 }
 
+@utility heading-4 {
+    font-family: "GFS Didot", serif;
+    font-size: 1.125rem; /* 18px */
+    font-weight: bold;
+}
+
 /* Scroll offset for fixed nav */
 section[id] {
     scroll-margin-top: 165px; /* Mobile nav height */
