@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Hero() {
   return (
     <div className="flex justify-center items-center bg-accent pt-[60px] container">
-      <div className="text-pearl flex flex-col items-center justify-center space-y-6 md:space-y-10 max-w-full">
+      <div className="text-pearl flex flex-col items-center justify-center space-y-6 md:space-y-10 max-w-full pb-[60px]">
         <h1 className="flex flex-row items-center justify-center gap-3 sm:gap-6 heading-1 uppercase">
           <div className="flex flex-col items-end leading-none">
             <span>Jordan</span>
@@ -30,6 +30,13 @@ export default function Hero() {
             are getting married
           </span>
         </div>
+
+        <p className="text-center heading-3">
+          <span className="block pb-4">Saturday, April 25th, 2026</span>
+          <span className="block">The Great Hall</span>
+          <span className="block">1087 Queen Street W.</span>
+          <span className="block">Toronto, ON</span>
+        </p>
       </div>
     </div>
   )
