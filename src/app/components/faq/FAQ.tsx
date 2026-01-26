@@ -13,10 +13,6 @@ export default function FAQ() {
       answer: "The wedding ceremony and reception (including cocktail hour, dinner and dancing) will take place at The Great Hall which is located at 1087 Queen Street W. Toronto, ON."
     },
     {
-      question: "What is the dress code?",
-      answer: "Formal attire / whatever makes you feel fabulous :)"
-    },
-    {
       question: "What is the easiest way to get to / from the venue?",
       answer: "The Great Hall is located at the corner of Queen Street W and Dovercourt Ave and is easily accessible by TTC, car and/or walking."
     },
